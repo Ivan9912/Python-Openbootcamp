@@ -1,15 +1,12 @@
-'''En este ejercicio vais a crear la clase Vehículo la cual tendrá los siguientes atributos:
+class Vehiculo:
+    color = 'white'
+    whells = '\'29'
+    doors = str(2)
 
-Color
+class Coche(Vehiculo):
+    velocidad = '200 Km/h'
+    cilindrada = '1.5Lts'
 
-Ruedas
+volkswagen = Coche()
 
-Puertas
-
-Por otro lado crearéis la clase Coche la cual heredará de Vehículo y tendrá los siguientes atributos:
-
-Velocidad
-
-Cilindrada
-
-Por último, tendrás que crear un objeto de la clase Coche y mostrarlo por consola.'''
+print(f'Este modelo de Volkswagen viene en color: {volkswagen.color}.\nTiene unas ruedas: {volkswagen.whells} Pulgadas.\nViene con {volkswagen.doors} puertas.\nSu velocidad Max. es de: {volkswagen.velocidad}.\nY, con una cilindrada de: {volkswagen.cilindrada}.\nGracias por su visita!.')
