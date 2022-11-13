@@ -1,13 +1,23 @@
 def main():
     
-    file_name = r'C:\Users\Desktop\usuarios.txt' #agregar ubicacion del archivo txt
+    file_name = r'C:\Users\Gorda Papa\Desktop\usuarios.txt' #agregar ubicacion del archivo txt
     users = []
     passwords = []
     validation = True
+    listData = [
+        'Users:Passwords',
+        'Nora:1234321',
+        'Exequiel:23214',
+        'Iván:12456834',
+        'Gastón:12564534',
+        'Ramón:14568234'
+    ]
     
-    with open(file_name, 'w', encoding='utf-8') as fAdd:
-        fAdd.write(':Users:Passwords\n1 :Nora:1234321\n2 :Exequiel:23214\n3 :Iván:12456834\n4 :Gastón:12564534\n5 :Ramón:14568234\n')
-        fAdd.close()
+    with open(file_name, 'w', encoding='utf-8') as oAdd:
+        for i, oneData in enumerate(listData):
+            oAdd.write(f'{i} :{oneData}\n')
+        oAdd.close()
+   
     print("Hi!")
     
     while (validation):
