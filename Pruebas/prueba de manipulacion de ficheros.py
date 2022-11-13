@@ -1,6 +1,6 @@
 def main():
     
-    file_name = r'C:\Users\?\Desktop\usuarios.txt' #agregar ubicacion del archivo txt
+    file_name = r'C:\Users\Desktop\Python Openbootcamp\Pruebas\usuarios.txt' #agregar ubicacion del archivo txt
     users = []
     passwords = []
     validation = True
