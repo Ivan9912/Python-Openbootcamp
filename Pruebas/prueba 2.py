@@ -2,7 +2,7 @@ import os
 
 def main():
     
-    os.system(f'dir')
+    os.system('start cmd.exe')
      
 if __name__ == '__main__':
     main()

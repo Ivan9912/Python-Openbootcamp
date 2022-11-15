@@ -1,16 +1,15 @@
+from getpass import getuser
 def main():
     
-    file_name = r'.\Proyecto de login y registro\viewUsers.txt'
+    file_name = r'.\bbdd\viewUsers.txt'
     users = []
     passwords = []
     listData = [
         'user:pass'
     ]
     
-    
-    
-    print("Hi!")
-    response = input("Do you want to add a user and password?\nType Yes or Not: ")
+    print(f'Hi {getuser()}! Welcome!')
+    response = input(f'Do you want to add a user and password?\nType Yes or Not: ')
     lowerResponse = response.lower()
     
     questions = [
