@@ -15,10 +15,13 @@ def main():
     
     j1 = Juguete('Potato', 10.5)
     
-    f = open('.\Pruebas\datos.bin', 'wb')
+    f = open('.\Pruebas\datos.bin', 'wb') #cargo archivo obj a .bin
     pickle.dump(j1, f)
     f.close()
     
+    t = open('.\Pruebas\datos.bin', 'rb') #leo el archivo .bin
+    pickle.load(t)
+    t.close()
     
 if __name__ == '__main__':
     main()
