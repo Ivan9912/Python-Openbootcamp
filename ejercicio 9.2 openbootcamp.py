@@ -19,8 +19,8 @@ def main():
             print(f'\'{inN}\' es un número negativo o cero.\nVuelva a intentar.\n')
             main()
     else:
-            print(f'\'{inN1}\' es una cadena de texto.\nVuelva a intentar.\n')
-            main()
+        print(f'\'{inN1}\' es una cadena de texto.\nVuelva a intentar.\n')
+        main()
 
 if __name__ == '__main__':
     main()
