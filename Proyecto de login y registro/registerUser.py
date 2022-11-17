@@ -1,7 +1,7 @@
 from getpass import getuser
 def main():
     
-    file_name = r'.\bbdd\viewUsers.txt'
+    file_name = r'.\ddbb\viewUsers.txt'
     users = []
     passwords = []
     listData = [
@@ -69,7 +69,7 @@ def main():
                 addDataUser = input("Tell the user to add:  ")
                 while addDataUser != '' and addDataUser != ' ' and addDataUser != '\n':
                     if addDataUser in validationUsers:
-                        print("El usuarios ingresado ya existe.\nPresione ENTER para salir.\n O vuelva a intentar.")
+                        print("The entered user already exists.\nPress ENTER to exit.\n Or try again.")
                         addDataUser = input("\nTell the user to add:  ")   
                     else:
                         addDatePassword = input("Now add the password:  ")

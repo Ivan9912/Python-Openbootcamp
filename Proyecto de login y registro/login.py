@@ -3,7 +3,7 @@ from getpass import getuser as gUser
 from generatorHTML import html as gHTML
 
 def main():
-    file = r'.\bbdd\viewUsers.txt' 
+    file = r'.\ddbb\viewUsers.txt' 
     
     def welcome():
         os.system('start welcome.html')
@@ -14,8 +14,8 @@ def main():
         datas = rLog.readlines()
         rLog.close()
         while i >= 0:
-            userIn = input ("Nombre de usuario: ")
-            passIn = input ("Ingrese la contraseña: ")
+            userIn = input ("Username: ")
+            passIn = input ("Enter password: ")
             string = f'{userIn}:{passIn}'
             for data in datas:
                 listnames = "".join(data).split('\n')

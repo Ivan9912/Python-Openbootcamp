@@ -1,8 +1,8 @@
 import os
 def main():
-    os.system("mkdir bbdd")
+    os.system("mkdir ddbb")
 
-    file = r'.\bbdd\viewUsers.txt'
+    file = r'.\ddbb\viewUsers.txt'
     f = open(file, 'w')
     f.close()
     
